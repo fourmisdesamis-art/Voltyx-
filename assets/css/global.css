@@ -1,0 +1,57 @@
+:root {
+  --bg: #0f0f1a;
+  --bg-elev: #1a1a2e;
+  --text: #eaeaf0;
+  --text-dim: #9a9ab0;
+  --accent: #6c5ce7;
+  --accent-hover: #5b4bd6;
+  --danger: #e74c3c;
+  --border: #2a2a3e;
+  --radius: 10px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.btn-primary {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  width: 100%;
+}
+.btn-primary:hover { background: var(--accent-hover); }
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-elev);
+}
+.topbar .logo { font-weight: bold; font-size: 1.2rem; color: var(--text); }
+.topbar nav { display: flex; gap: 1.5rem; align-items: center; }
+.topbar nav a.active { color: var(--accent); font-weight: 600; }
+.topbar button {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 0.4rem 0.9rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+.topbar button:hover { background: var(--border); }
