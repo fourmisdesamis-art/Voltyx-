@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paramètres — Voltyx Studios</title>
+  <link rel="stylesheet" href="/assets/css/global.css" />
+  <link rel="stylesheet" href="/assets/css/settings.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a href="/" class="logo">Voltyx Studios</a>
+    <nav>
+      <a href="/profile">Profil</a>
+      <a href="/settings" class="active">Paramètres</a>
+      <button id="logout-btn">Déconnexion</button>
+    </nav>
+  </header>
+
+  <main class="settings-container">
+    <h1>Paramètres du compte</h1>
+
+    <section class="settings-card">
+      <h2>Informations générales</h2>
+      <label>Pseudo
+        <input type="text" id="username" />
+      </label>
+      <label>Email
+        <input type="email" id="email" disabled />
+      </label>
+      <button id="save-general">Enregistrer</button>
+    </section>
+
+    <section class="settings-card">
+      <h2>Sécurité</h2>
+      <button id="change-password">Changer le mot de passe</button>
+    </section>
+  </main>
+
+  <script type="module" src="/assets/js/settings.js"></script>
+</body>
+      </html>
