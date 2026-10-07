@@ -1,0 +1,50 @@
+.settings-container {
+  max-width: 720px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.settings-container h1 { font-size: 1.6rem; }
+
+.settings-card {
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.settings-card h2 { font-size: 1.1rem; margin-bottom: 0.25rem; }
+
+.settings-card label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+  color: var(--text-dim);
+}
+.settings-card input {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text);
+  padding: 0.65rem 0.85rem;
+  font-size: 1rem;
+  outline: none;
+}
+.settings-card input:focus { border-color: var(--accent); }
+.settings-card input:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.settings-card button {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 0.65rem 1rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  align-self: flex-start;
+}
+.settings-card button:hover { background: var(--accent-hover); }
