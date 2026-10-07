@@ -4,12 +4,12 @@ import { getAuth } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-aut
 import { getFirestore } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 
 const firebaseConfig = {
-  apiKey: "TA_CLE_API",
-  authDomain: "ton-projet.firebaseapp.com",
-  projectId: "ton-projet",
-  storageBucket: "ton-projet.appspot.com",
-  messagingSenderId: "123456789",
-  appId: "1:123456789:web:abcdef"
+  apiKey: "AIzaSyDIs1SHpwMB_M2U0J-xGu6QE1XmFe6jRLE",
+  authDomain: "voltyx-studios.firebaseapp.com",
+  projectId: "voltyx-studios",
+  storageBucket: "voltyx-studios.firebasestorage.app",
+  messagingSenderId: "354640586726",
+  appId: "1:354640586726:web:8c6bc8e72433196dadd827",
 };
 
 export const app = initializeApp(firebaseConfig);
