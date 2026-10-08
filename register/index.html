@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inscription — Voltyx Studios</title>
+  <link rel="stylesheet" href="/assets/css/global.css" />
+  <link rel="stylesheet" href="/assets/css/auth.css" />
+</head>
+<body class="auth-body">
+
+  <a href="/" class="auth-back">← Retour</a>
+
+  <div class="auth-wrapper">
+    <div class="auth-brand">
+      <h1>Voltyx Studios</h1>
+      <p>Crée ton compte Voltyx</p>
+    </div>
+
+    <div class="auth-card">
+      <form id="register-form" class="auth-form active">
+        <label>
+          Pseudo
+          <input type="text" id="register-username" required minlength="3" maxlength="20" />
+        </label>
+        <label>
+          Email
+          <input type="email" id="register-email" required autocomplete="email" />
+        </label>
+        <label>
+          Mot de passe
+          <input type="password" id="register-password" required minlength="6" autocomplete="new-password" />
+        </label>
+        <button type="submit" class="btn-primary">Créer mon compte</button>
+        <p class="auth-error" id="register-error"></p>
+      </form>
+
+      <p class="auth-switch">
+        Déjà un compte ?
+        <a href="/login">Se connecter</a>
+      </p>
+    </div>
+  </div>
+
+  <script type="module" src="/assets/js/register.js"></script>
+</body>
+</html>
