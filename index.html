@@ -3,59 +3,90 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Voltyx Studios</title>
+  <title>Voltyx Studios — Le studio derrière Lumalia</title>
   <link rel="stylesheet" href="/assets/css/global.css" />
-  <link rel="stylesheet" href="/assets/css/auth.css" />
+  <link rel="stylesheet" href="/assets/css/landing.css" />
 </head>
-<body class="auth-body">
+<body>
 
-  <div class="auth-wrapper">
-    <div class="auth-brand">
-      <h1>Voltyx Studios</h1>
-      <p>Le studio derrière Lumalia</p>
+  <!-- NAVBAR FLOOTTANTE -->
+  <header class="navbar">
+    <a href="/" class="navbar-brand">
+      <span class="brand-dot"></span>
+      Voltyx Studios
+    </a>
+
+    <nav class="navbar-links">
+      <a href="#about">À propos</a>
+      <a href="#projects">Projets</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="navbar-actions">
+      <!-- Affiché si déconnecté -->
+      <a href="/login" class="btn-ghost" id="nav-login">Connexion</a>
+      <!-- Affiché si connecté -->
+      <a href="/settings" class="avatar-btn" id="nav-avatar" hidden>
+        <img id="nav-avatar-img" alt="Profil" />
+      </a>
     </div>
+  </header>
 
-    <div class="auth-card">
-      <!-- Onglets -->
-      <div class="auth-tabs">
-        <button class="auth-tab active" data-tab="login">Connexion</button>
-        <button class="auth-tab" data-tab="register">Inscription</button>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-tag">VOLTYX STUDIOS — STUDIO INDÉPENDANT</p>
+      <h1>Un compte,<br />un studio,<br />plusieurs univers.</h1>
+      <p class="hero-sub">
+        Le studio derrière <strong>Lumalia</strong>. Crée ton compte Voltyx
+        pour accéder à tous nos projets, gérer ton profil et bien plus.
+      </p>
+
+      <div class="hero-actions">
+        <a href="/register" class="btn-primary btn-lg">
+          Créer mon compte
+        </a>
+        <a href="/login" class="btn-secondary btn-lg">
+          Mon compte
+        </a>
       </div>
 
-      <!-- Formulaire de connexion -->
-      <form id="login-form" class="auth-form active">
-        <label>
-          Email
-          <input type="email" id="login-email" required />
-        </label>
-        <label>
-          Mot de passe
-          <input type="password" id="login-password" required />
-        </label>
-        <button type="submit" class="btn-primary">Se connecter</button>
-        <p class="auth-error" id="login-error"></p>
-      </form>
-
-      <!-- Formulaire d'inscription -->
-      <form id="register-form" class="auth-form">
-        <label>
-          Pseudo
-          <input type="text" id="register-username" required minlength="3" maxlength="20" />
-        </label>
-        <label>
-          Email
-          <input type="email" id="register-email" required />
-        </label>
-        <label>
-          Mot de passe
-          <input type="password" id="register-password" required minlength="6" />
-        </label>
-        <button type="submit" class="btn-primary">Créer mon compte</button>
-        <p class="auth-error" id="register-error"></p>
-      </form>
+      <p class="hero-platforms">Windows · macOS · Linux · Web</p>
     </div>
-  </div>
+  </section>
 
-  <script type="module" src="/assets/js/auth-form.js"></script>
+  <!-- À PROPOS -->
+  <section id="about" class="section">
+    <h2>À propos</h2>
+    <p>
+      Voltyx Studios est un studio indépendant qui développe Lumalia
+      et d'autres projets à venir. Notre objectif : créer des expériences
+      uniques et accessibles depuis une seule plateforme.
+    </p>
+  </section>
+
+  <!-- PROJETS -->
+  <section id="projects" class="section">
+    <h2>Nos projets</h2>
+    <div class="projects-grid">
+      <article class="project-card">
+        <h3>Lumalia</h3>
+        <p>Notre projet phare. Rejoins l'aventure.</p>
+      </article>
+      <!-- D'autres cartes plus tard -->
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contact" class="footer">
+    <p>© <span id="year"></span> Voltyx Studios — Tous droits réservés.</p>
+    <nav>
+      <a href="/login">Connexion</a>
+      <a href="/register">Inscription</a>
+    </nav>
+  </footer>
+
+  <script type="module" src="/assets/js/landing.js"></script>
 </body>
-          </html>
+  </html>
